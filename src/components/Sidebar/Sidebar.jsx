@@ -21,14 +21,14 @@ const subMenuVariants = {
 }
 
 export const Sidebar = () => {
-    const [sidebarAvtive, setSidebarActive] = useState(false)
+    const [sidebarActive, setSidebarActive] = useState(false)
     const [option1Active, setOption1Active] = useState(false)
     const [option2Active, setOption2Active] = useState(false)
     const [option3Active, setOption3Active] = useState(false)
     const [option4Active, setOption4Active] = useState(false)
 
     const toggleSidebarStatus = () => {
-        setSidebarActive(!sidebarAvtive)
+        setSidebarActive(!sidebarActive)
         setOption1Active(false)
         setOption2Active(false)
         setOption3Active(false)
@@ -50,7 +50,7 @@ export const Sidebar = () => {
     return (
         <IconContext.Provider value={{ className: 'text-slate-200 w-10 h-10' }}>
             <motion.nav
-                animate={sidebarAvtive ? 'open' : 'close'}
+                animate={sidebarActive ? 'open' : 'close'}
                 variants={sidebarVariants}
                 className={`bg-emerald-700 text-slate-200 p-5 flex flex-col items-start justify-between w-20 overflow-x-hidden`}
             >
@@ -60,11 +60,11 @@ export const Sidebar = () => {
                             <MdMenu />
                         </button>
                         <motion.h2
-                            animate={sidebarAvtive ? 'open' : 'close'}
+                            animate={sidebarActive ? 'open' : 'close'}
                             variants={itemNameVariants}
                             className='ml-8 text-3xl w-full text-center'
                         >
-                            Nombre
+                            Company Name
                         </motion.h2>
                     </div>
                     <div className='flex flex-col'>
@@ -77,7 +77,7 @@ export const Sidebar = () => {
                                 >
                                     <motion.span
                                         animate={
-                                            sidebarAvtive ? 'open' : 'close'
+                                            sidebarActive ? 'open' : 'close'
                                         }
                                         variants={itemNameVariants}
                                         className='ml-8'
@@ -111,7 +111,7 @@ export const Sidebar = () => {
                                 >
                                     <motion.span
                                         animate={
-                                            sidebarAvtive ? 'open' : 'close'
+                                            sidebarActive ? 'open' : 'close'
                                         }
                                         variants={itemNameVariants}
                                         className='ml-8'
@@ -146,7 +146,7 @@ export const Sidebar = () => {
                                 >
                                     <motion.span
                                         animate={
-                                            sidebarAvtive ? 'open' : 'close'
+                                            sidebarActive ? 'open' : 'close'
                                         }
                                         variants={itemNameVariants}
                                         className='ml-8'
@@ -181,7 +181,7 @@ export const Sidebar = () => {
                                 >
                                     <motion.span
                                         animate={
-                                            sidebarAvtive ? 'open' : 'close'
+                                            sidebarActive ? 'open' : 'close'
                                         }
                                         variants={itemNameVariants}
                                         className='ml-8'
@@ -213,7 +213,7 @@ export const Sidebar = () => {
                     <MdPerson />
                     <button className='my-3 w-60 flex items-center'>
                         <motion.span
-                            animate={sidebarAvtive ? 'open' : 'close'}
+                            animate={sidebarActive ? 'open' : 'close'}
                             variants={itemNameVariants}
                             className='ml-8'
                         >
