@@ -6,7 +6,7 @@ export const Home = () => {
         <div className="flex h-dvh">
             <NewSidebar />
             {/* <Sidebar /> */}
-            <div className="flex-grow bg-slate-200">
+            <div className="flex-grow bg-slate-200 p-3">
                 <h2>Home</h2>
             </div>
         </div>

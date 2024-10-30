@@ -96,7 +96,7 @@ export const NewSidebar = () => {
     }
 
     return (
-        <IconContext.Provider value={{ className: 'text-slate-200 w-10 h-10' }}>
+        <IconContext.Provider value={{ className: 'text-slate-200 w-8 h-8' }}>
             <motion.nav className='bg-slate-700 text-slate-200 p-5 w-20 relative flex flex-col justify-between z-50'>
                 <div>
                     <ul>
@@ -123,7 +123,9 @@ export const NewSidebar = () => {
                     </ul>
                 </div>
                 <div>
-                    <MdPerson />
+                    <button>
+                        <MdPerson />
+                    </button>
                 </div>
             </motion.nav>
             <motion.div
@@ -133,7 +135,7 @@ export const NewSidebar = () => {
                 className='bg-slate-600 text-slate-200 w-60 h-screen -ml-60 p-5 absolute top-0 flex flex-col justify-between items-start z-30'
             >
                 <h2 className='text-3xl'>Company Name</h2>
-                <button>User</button>
+                <button className='mb-3'>User</button>
             </motion.div>
             {/* -------------GROUP 1--------------- */}
             <motion.div
